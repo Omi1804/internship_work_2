@@ -1,0 +1,102 @@
+/* companies.css */
+
+.companies {
+  position: relative;
+  top: 0;
+  background-color: white;
+  padding: 50px 0;
+}
+
+.com_content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.com_content .des {
+  margin-bottom: 30px;
+}
+
+.com_content .des p {
+  font-size: 2rem;
+  margin-block: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.com_content .des h3 {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.com_logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.com_logos img {
+  height: 80px;
+  margin: 0 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.com_logos img:hover {
+  scale: 1.1;
+  opacity: 1;
+}
+
+/* Media queries for small screens */
+@media (max-width: 600px) {
+  .companies {
+    padding: 30px 10px;
+  }
+
+  .com_content .des p {
+    font-size: 1.3rem;
+  }
+
+  .com_content .des h3 {
+    font-size: 1rem;
+  }
+
+  .com_logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .com_logos img {
+    height: 60px;
+    margin: 10px 10px;
+  }
+}
+
+/* Media queries for medium screens */
+@media (min-width: 601px) and (max-width: 768px) {
+  .companies {
+    padding: 40px 10px;
+  }
+
+  .com_content .des p {
+    font-size: 1.7rem;
+  }
+
+  .com_content .des h3 {
+    font-size: 1.1rem;
+  }
+
+  .com_logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .com_logos img {
+    height: 70px;
+    margin: 10px 15px;
+  }
+}

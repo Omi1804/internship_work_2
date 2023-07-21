@@ -1,0 +1,137 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 2rem 7.8rem;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+.logo .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #170f49;
+}
+
+.navbar_icons .navlist {
+  list-style: none;
+  display: flex;
+  margin-right: 5rem;
+  padding: 0;
+}
+
+.navbar_icons .navlist li {
+  margin-right: 5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1e1f4b;
+}
+
+.navbar_icons .navlist li:last-child {
+  margin-right: 0;
+}
+
+button {
+  padding: 1rem 2.3rem;
+  background-color: #361a3a;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0.8rem 3.4rem rgba(40, 44, 109, 0.3100000024);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for phone screens */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.5rem 10px;
+  }
+
+  .logo img {
+    height: 18px;
+    margin-right: 0.2rem;
+  }
+
+  .logo .title {
+    font-size: 0.9rem;
+    display: none;
+  }
+
+  .navbar_icons .navlist {
+    margin-right: 0rem;
+  }
+
+  .navbar_icons .navlist li {
+    font-size: 0.8rem;
+    margin-right: 0.7rem;
+    font-weight: 500;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
+  .logo .title {
+    font-size: 0.9rem;
+    display: none;
+  }
+
+  .navbar_icons .navlist {
+    margin-right: 2rem;
+  }
+
+  .navbar_icons .navlist li {
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+
+  button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar {
+    padding: 1.5rem 3rem;
+  }
+
+  .navbar_icons .navlist {
+    margin-right: 3rem;
+  }
+
+  .navbar_icons .navlist li {
+    font-size: 1.2rem;
+    margin-right: 3rem;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+}
